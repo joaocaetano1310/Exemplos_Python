@@ -67,26 +67,32 @@ def contador():
     print("Contador de números")
     print(" " * 25)
 
-    print("Deseja listar de quantos números?")
-    qntd_num1 = int(input("De: "))
-    qntd_num2 = int(input("Até : "))
+    while True:
+        print("Deseja listar de quantos números?")
+        qntd_num1 = int(input("De: "))
+        qntd_num2 = int(input("Até : "))
 
 
-    print("1- Listar somente números pares")
-    print("2- Listar somente números impar")
+        print("1- Listar somente números pares")
+        print("2- Listar somente números impar")
+        print("3- Listar todos\n")
 
-    opcao = int(input("Digite a opcao: "))
-    if opcao == 1:
-        for i in range(qntd_num1, qntd_num2):
-            if i % 2 == 0:
+        opcao = int(input("Digite a opcao: "))
+        if opcao > 3 or opcao < 1:
+            print("Escolha uma opcao valida!\n")
+            continue
+        elif opcao == 1:
+            for i in range(qntd_num1, qntd_num2):
+                if i % 2 == 0:
+                    print(i)
+        elif opcao == 2:
+            for i in range(qntd_num1, qntd_num2):
+                if i % 2 == 1:
+                    print(i)
+        else:
+            for i in range(qntd_num1, qntd_num2):
                 print(i)
-    elif opcao == 2:
-        for i in range(1, 101):
-            if i % 2 == 1:
-                print(i)
-    else:
-        for i in range(1, 101):
-            print(i)
+        break
 
 # Tabuada
 def tabuada():
