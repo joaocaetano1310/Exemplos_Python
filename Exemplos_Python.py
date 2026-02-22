@@ -82,15 +82,15 @@ def contador():
             print("Escolha uma opcao valida!\n")
             continue
         elif opcao == 1:
-            for i in range(qntd_num1, qntd_num2):
+            for i in range(qntd_num1, qntd_num2 +1):
                 if i % 2 == 0:
                     print(i)
         elif opcao == 2:
-            for i in range(qntd_num1, qntd_num2):
+            for i in range(qntd_num1, qntd_num2 +1):
                 if i % 2 == 1:
                     print(i)
         else:
-            for i in range(qntd_num1, qntd_num2):
+            for i in range(qntd_num1, qntd_num2 +1):
                 print(i)
         break
 
