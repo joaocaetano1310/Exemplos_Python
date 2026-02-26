@@ -126,13 +126,13 @@ def media():
 def menu():
 
     print(" " * 25)
-    print("1- Verficador de números pares o impares.")
-    print("2- Indica qual número é maior")
-    print("3- Calculadora simples")
-    print("4- Contador")
-    print("5- Tabuada")
-    print("6- Media")
-    print("7- Sair")
+    print("1- Verficador de números pares ou impares.")
+    print("2- Indicador de números maiores ou menores.")
+    print("3- Calculadora simples.")
+    print("4- Contador de números.")
+    print("5- Tabuada.")
+    print("6- Calculadora de média.")
+    print("7- Sair.")
     print(" " * 25)
 
     opcao = int(input("Digite a opção: "))
